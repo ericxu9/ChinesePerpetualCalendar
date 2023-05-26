@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://yun.rili.cn/wnl/index.html?d=20160512 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>【中华万年历】</title>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="keywords" content="万年历，日历，桌面日历，日历查询，万年历，农历，日历表，2014年日历，阴历，calendar，Chinese calendar">
+	<meta name="description" content="万年历，最适合中国人的日历，为您提供日历查询、农历查询、黄历查询、日历表、万年历，2014年日历、2014年日历、万年历。在中华万年历完整版中还为您提供记事、日程安排、活动提醒等功能。">
+	<link href="http://yun.rili.cn/wnl/img/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="./resource/reset.css">
+	<link rel="stylesheet" href="./resource/layout.css">
+	<link rel="stylesheet" href="./resource/module.css">
+	<link rel="stylesheet" href="./resource/wnlImprove.css">
+	<link rel="stylesheet" href="./resource/index.css">
+	<link rel="stylesheet" href="./resource/wnl.css">
+	<link rel="stylesheet" href="./resource/city.css">
+	<script src="./resource/hm.js"></script><script type="text/javascript">
+/* 		var arrHref = location.href.split("?");
+		if(arrHref.length>1){
+			location.href="m/index.html?"+arrHref[1];
+		}
+		var userAgent = navigator.userAgent.toLowerCase();  
+		if(userAgent.indexOf("iphone") != -1
+				|| userAgent.indexOf("ipad") != -1
+				|| userAgent.indexOf("android") != -1
+				|| userAgent.indexOf("ios") != -1){
+			var arrHref = location.href.split("?");
+			if(arrHref.length>1){
+				location.href="m/index.html?"+arrHref[1];
+			}else{
+				location.href="m/index.html"
+			}
+		} */
+		var userAgent = navigator.userAgent.toLowerCase(),isweixin = userAgent.indexOf("micromessenger")>-1;
+		var platform;
+		var date = new Date();
+		var yy = date.getFullYear();    //获取年份
+		var mm = (date.getMonth()+1>12?1:date.getMonth()+1)>9?(date.getMonth()+1>12?1:date.getMonth()+1):"0"+(date.getMonth()+1>12?1:date.getMonth()+1);
+		var dd= date.getDate()>9?date.getDate():"0"+date.getDate();
+		var date = String(yy)+String(mm)+String(dd);  //将数字转化为字符串
+		var href_url = window.location.href;   //获取页面URL
+		var web_url = "http://yun.rili.cn/wnl/index.html?d="+date;
+		var m_url = "http://yun.rili.cn/wnl/m/index.html";
+		function getUrlParam(name) {
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+		    var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+		    if (r != null) return unescape(r[2]); return null; //返回参数值
+		}
+		var _hmt = _hmt || [];
+		//百度统计
+		
+	</script>
+	<!-- Recommended -->
+	<!--[if lt IE 7]>
+		<script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+	<!-- 为了防止juery啊ajax请求在IE6下崩溃,故对jquery的ajax请求进行了修改 -->
+	<script type="text/javascript" src="./resource/jquery.js"></script>
+	<!--[if IE]>
+		<script src="js/jquery.placeholder.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="./resource/json2.js"></script>
+</head>
+<body><div id="artDialog14630219830880" class="" style="display: none; position: absolute;"><div class="aui_outer"><table class="aui_border"><tbody><tr><td class="aui_nw"></td><td class="aui_n"></td><td class="aui_ne"></td></tr><tr><td class="aui_w"></td><td class="aui_c"><div class="aui_inner"><table class="aui_dialog"><tbody><tr><td colspan="2" class="aui_header"><div class="aui_titleBar"><div class="aui_title" style="cursor: move;"></div><a class="aui_close" href="javascript:;">×</a></div></td></tr><tr><td class="aui_icon" style="display: none;"><div class="aui_iconBg" style="background: none;"></div></td><td class="aui_main" style="width: auto; height: auto;"><div class="aui_content"></div></td></tr><tr><td colspan="2" class="aui_footer"><div class="aui_buttons" style="display: none;"></div></td></tr></tbody></table></div></td><td class="aui_e"></td></tr><tr><td class="aui_sw"></td><td class="aui_s"></td><td class="aui_se" style="cursor: se-resize;"></td></tr></tbody></table></div></div>
+
+	<div id="indexWindow" class="indexW" style="visibility: visible;">
+		
+		<div class="content clearfix" id="content">
+			<div class="cont_left">
+				<div style="margin-right:380px;height:100%;">
+				<div class="c_top clear" style="background:#fff;">
+					<div class="ct_content">
+						<!--     <div class="toleft"><img src="img/dayPrev.jpg" alt=""></div> -->
+						<div class="selectleftPrev fll" id="prev_button_a" style=""></div>
+						<div class="yearmonth fll">
+							<div class="year jp-dropdown fll" id="dropdownYear">
+								<div class="numberCal fll ">
+									<span id="yearValue">2023</span>
+								</div>
+								<div class="selectdown fll" id="select0"></div>
+								<ul class="jp-dropdown-menu jp-ddmH-extend" id="yearjpDDM">
+								<li><a>1900</a></li><li><a>1901</a></li><li><a>1902</a></li><li><a>1903</a></li><li><a>1904</a></li><li><a>1905</a></li><li><a>1906</a></li><li><a>1907</a></li><li><a>1908</a></li><li><a>1909</a></li><li><a>1910</a></li><li><a>1911</a></li><li><a>1912</a></li><li><a>1913</a></li><li><a>1914</a></li><li><a>1915</a></li><li><a>1916</a></li><li><a>1917</a></li><li><a>1918</a></li><li><a>1919</a></li><li><a>1920</a></li><li><a>1921</a></li><li><a>1922</a></li><li><a>1923</a></li><li><a>1924</a></li><li><a>1925</a></li><li><a>1926</a></li><li><a>1927</a></li><li><a>1928</a></li><li><a>1929</a></li><li><a>1930</a></li><li><a>1931</a></li><li><a>1932</a></li><li><a>1933</a></li><li><a>1934</a></li><li><a>1935</a></li><li><a>1936</a></li><li><a>1937</a></li><li><a>1938</a></li><li><a>1939</a></li><li><a>1940</a></li><li><a>1941</a></li><li><a>1942</a></li><li><a>1943</a></li><li><a>1944</a></li><li><a>1945</a></li><li><a>1946</a></li><li><a>1947</a></li><li><a>1948</a></li><li><a>1949</a></li><li><a>1950</a></li><li><a>1951</a></li><li><a>1952</a></li><li><a>1953</a></li><li><a>1954</a></li><li><a>1955</a></li><li><a>1956</a></li><li><a>1957</a></li><li><a>1958</a></li><li><a>1959</a></li><li><a>1960</a></li><li><a>1961</a></li><li><a>1962</a></li><li><a>1963</a></li><li><a>1964</a></li><li><a>1965</a></li><li><a>1966</a></li><li><a>1967</a></li><li><a>1968</a></li><li><a>1969</a></li><li><a>1970</a></li><li><a>1971</a></li><li><a>1972</a></li><li><a>1973</a></li><li><a>1974</a></li><li><a>1975</a></li><li><a>1976</a></li><li><a>1977</a></li><li><a>1978</a></li><li><a>1979</a></li><li><a>1980</a></li><li><a>1981</a></li><li><a>1982</a></li><li><a>1983</a></li><li><a>1984</a></li><li><a>1985</a></li><li><a>1986</a></li><li><a>1987</a></li><li><a>1988</a></li><li><a>1989</a></li><li><a>1990</a></li><li><a>1991</a></li><li><a>1992</a></li><li><a>1993</a></li><li><a>1994</a></li><li><a>1995</a></li><li><a>1996</a></li><li><a>1997</a></li><li><a>1998</a></li><li><a>1999</a></li><li><a>2000</a></li><li><a>2001</a></li><li><a>2002</a></li><li><a>2003</a></li><li><a>2004</a></li><li><a>2005</a></li><li><a>2006</a></li><li><a>2007</a></li><li><a>2008</a></li><li><a>2009</a></li><li><a>2010</a></li><li><a>2011</a></li><li><a>2012</a></li><li><a>2013</a></li><li><a>2014</a></li><li><a>2015</a></li><li><a>2016</a></li><li><a>2017</a></li><li><a>2018</a></li><li><a>2019</a></li><li><a>2020</a></li><li><a>2021</a></li><li><a>2022</a></li><li><a>2023</a></li><li><a>2024</a></li><li><a>2025</a></li><li><a>2026</a></li><li><a>2027</a></li><li><a>2028</a></li><li><a>2029</a></li><li><a>2030</a></li><li><a>2031</a></li><li><a>2032</a></li><li><a>2033</a></li><li><a>2034</a></li><li><a>2035</a></li><li><a>2036</a></li><li><a>2037</a></li><li><a>2038</a></li><li><a>2039</a></li><li><a>2040</a></li><li><a>2041</a></li><li><a>2042</a></li><li><a>2043</a></li><li><a>2044</a></li><li><a>2045</a></li><li><a>2046</a></li><li><a>2047</a></li><li><a>2048</a></li><li><a>2049</a></li><li><a>2050</a></li></ul>
+							</div>
+							<div class="month jp-dropdown fll" id="dropdownMonth">
+								<div class="numberCal fll ">
+									<span id="monthValue">5</span>
+								</div>
+								<div class="selectdown fll" id="select1"></div>
+								<ul class="jp-dropdown-menu w59">
+									<li><a>01月</a></li>
+									<li><a>02月</a></li>
+									<li><a>03月</a></li>
+									<li><a>04月</a></li>
+									<li><a>05月</a></li>
+									<li><a>06月</a></li>
+									<li><a>07月</a></li>
+									<li><a>08月</a></li>
+									<li><a>09月</a></li>
+									<li><a>10月</a></li>
+									<li><a>11月</a></li>
+									<li><a>12月</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="selectright fll" id="next_button_a"></div>
+						<div class="shit fll">
+							<div class="chinaDayM fll tac" id="china_Dt">丙申猴年&nbsp;四月初六</div>
+							<div class="toright fll"></div>
+	
+							<div class="fll jp-dropdown allvacation" id="allVacation">
+								<div class="fll jieri" id="vacationValue"></div>
+								<div class="selectdown" id="select2"></div>
+								<ul class="jp-dropdown-menu">
+	
+
+							</div>
+							<div class="jintian1 fll">
+								<div class="todayCal" id="today_button" style="display: none;">今天</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="calendar" id="mainCal" style="background:#fff;"><table> 						<thead class="tablehead"> 							<tr> 								<td class="thead" style="color:#bc5016;">日</td> 								<td class="thead">一</td> 								<td class="thead">二</td> 								<td class="thead">三</td> 								<td class="thead">四</td> 								<td class="thead">五</td> 								<td class="thead" style="color:#bc5016;">六</td> 							</tr> 						</thead> 					</table> 					<table id="cont" style="height: 514px;"> 						<tbody><tr style="height:20%;"><td i="0" j="0" style="height:20%;" class="block block5 "><a class="block_content" data="0501" href="javascript:;"><div class="jprestWork">假</div><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">1</div><div class="lnumber" title="劳动节 " style="color:#BC5016;">劳动节 </div></div><div class="tdhover"></div></a></td><td i="0" j="1" style="height:20%;" class="block block5 "><a class="block_content" data="0502" href="javascript:;"><div class="jprestWork">假</div><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">2</div><div class="lnumber" title="母亲节 " style="color:#BC5016;">母亲节 </div></div><div class="tdhover"></div></a></td><td i="0" j="2" style="height:20%;" class="block block5 "><a class="block_content" data="0503" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">3</div><div class="lnumber" title="">廿七</div></div><div class="tdhover"></div></a></td><td i="0" j="3" style="height:20%;" class="block block5 "><a class="block_content" data="0504" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">4</div><div class="lnumber" title="青年节 " style="color:#BC5016;">青年节 </div></div><div class="tdhover"></div></a></td><td i="0" j="4" style="height:20%;" class="block block5 "><a class="block_content" data="0505" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">5</div><div class="lnumber" title="立夏" style="color:#BC5016;">立夏</div></div><div class="tdhover"></div></a></td><td i="0" j="5" style="height:20%;" class="block block5 "><a class="block_content" data="0506" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">6</div><div class="lnumber" title="">三十</div></div><div class="tdhover"></div></a></td><td i="0" j="6" style="height:20%;" class="block block5 "><a class="block_content" data="0507" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">7</div><div class="lnumber" title="">初一</div></div><div class="tdhover"></div></a></td></tr><tr style="height:20%;"><td i="1" j="0" style="height:20%;" class="block block5 "><a class="block_content" data="0508" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">8</div><div class="lnumber" title="">初二</div></div><div class="tdhover"></div></a></td><td i="1" j="1" style="height:20%;" class="block block5 "><a class="block_content" data="0509" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">9</div><div class="lnumber" title="">初三</div></div><div class="tdhover"></div></a></td><td i="1" j="2" style="height:20%;" class="block block5 "><a class="block_content" data="0510" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">10</div><div class="lnumber" title="">初四</div></div><div class="tdhover"></div></a></td><td i="1" j="3" style="height:20%;" class="block block5 "><a class="block_content" data="0511" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">11</div><div class="lnumber" title="">初五</div></div><div class="tdhover"></div></a></td><td i="1" j="4" style="height:20%;" class="block block5 today"><a class="block_content" data="0512" href="javascript:;" style="background: url(&quot;img/finel.png&quot;) 0px 0px no-repeat;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">12</div><div class="lnumber" title="护士节 " style="color:#BC5016;">护士节 </div></div><div class="tdhover"></div></a></td><td i="1" j="5" style="height:20%;" class="block block5 "><a class="block_content" data="0513" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">13</div><div class="lnumber" title="">初七</div></div><div class="tdhover"></div></a></td><td i="1" j="6" style="height:20%;" class="block block5 "><a class="block_content" data="0514" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">14</div><div class="lnumber" title="">初八</div></div><div class="tdhover"></div></a></td></tr><tr style="height:20%;"><td i="2" j="0" style="height:20%;" class="block block5 "><a class="block_content" data="0515" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">15</div><div class="lnumber" title="国际家庭日 " style="color:#BC5016;">国际家庭日 </div></div><div class="tdhover"></div></a></td><td i="2" j="1" style="height:20%;" class="block block5 "><a class="block_content" data="0516" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">16</div><div class="lnumber" title="">初十</div></div><div class="tdhover"></div></a></td><td i="2" j="2" style="height:20%;" class="block block5 "><a class="block_content" data="0517" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">17</div><div class="lnumber" title="">十一</div></div><div class="tdhover"></div></a></td><td i="2" j="3" style="height:20%;" class="block block5 "><a class="block_content" data="0518" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">18</div><div class="lnumber" title="">十二</div></div><div class="tdhover"></div></a></td><td i="2" j="4" style="height:20%;" class="block block5 "><a class="block_content" data="0519" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">19</div><div class="lnumber" title="中国旅游日 " style="color:#BC5016;">中国旅游日 </div></div><div class="tdhover"></div></a></td><td i="2" j="5" style="height:20%;" class="block block5 "><a class="block_content" data="0520" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">20</div><div class="lnumber" title="小满" style="color:#BC5016;">小满</div></div><div class="tdhover"></div></a></td><td i="2" j="6" style="height:20%;" class="block block5 "><a class="block_content" data="0521" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">21</div><div class="lnumber" title="">十五</div></div><div class="tdhover"></div></a></td></tr><tr style="height:20%;"><td i="3" j="0" style="height:20%;" class="block block5 "><a class="block_content" data="0522" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">22</div><div class="lnumber" title="">十六</div></div><div class="tdhover"></div></a></td><td i="3" j="1" style="height:20%;" class="block block5 "><a class="block_content" data="0523" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">23</div><div class="lnumber" title="">十七</div></div><div class="tdhover"></div></a></td><td i="3" j="2" style="height:20%;" class="block block5 "><a class="block_content" data="0524" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">24</div><div class="lnumber" title="">十八</div></div><div class="tdhover"></div></a></td><td i="3" j="3" style="height:20%;" class="block block5 "><a class="block_content" data="0525" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">25</div><div class="lnumber" title="">十九</div></div><div class="tdhover"></div></a></td><td i="3" j="4" style="height:20%;" class="block block5 "><a class="block_content" data="0526" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">26</div><div class="lnumber" title="">二十</div></div><div class="tdhover"></div></a></td><td i="3" j="5" style="height:20%;" class="block block5 "><a class="block_content" data="0527" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">27</div><div class="lnumber" title="">廿一</div></div><div class="tdhover"></div></a></td><td i="3" j="6" style="height:20%;" class="block block5 "><a class="block_content" data="0528" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">28</div><div class="lnumber" title="">廿二</div></div><div class="tdhover"></div></a></td></tr><tr style="height:20%;"><td i="4" j="0" style="height:20%;" class="block block5 "><a class="block_content" data="0529" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#ff4e00;">29</div><div class="lnumber" title="">廿三</div></div><div class="tdhover"></div></a></td><td i="4" j="1" style="height:20%;" class="block block5 "><a class="block_content" data="0530" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">30</div><div class="lnumber" title="">廿四</div></div><div class="tdhover"></div></a></td><td i="4" j="2" style="height:20%;" class="block block5 "><a class="block_content" data="0531" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number">31</div><div class="lnumber" title="无烟日 " style="color:#BC5016;">无烟日 </div></div><div class="tdhover"></div></a></td><td i="4" j="3" style="height:20%;" class="block block5 "><a class="block_content" data="0601" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#c3c3c3;">1</div><div class="lnumber" title="儿童节 " style="color:#BC5016;">儿童节 </div></div><div class="tdhover"></div></a></td><td i="4" j="4" style="height:20%;" class="block block5 "><a class="block_content" data="0602" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#c3c3c3;">2</div><div class="lnumber" title="">廿七</div></div><div class="tdhover"></div></a></td><td i="4" j="5" style="height:20%;" class="block block5 "><a class="block_content" data="0603" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#c3c3c3;">3</div><div class="lnumber" title="">廿八</div></div><div class="tdhover"></div></a></td><td i="4" j="6" style="height:20%;" class="block block5 "><a class="block_content" data="0604" href="javascript:;"><div style="display:inline-block;position:absolute;top:50%;width:100%;margin-top:-22px;left:0;"><div class="number" style="color:#c3c3c3;">4</div><div class="lnumber" title="">廿九</div></div><div class="tdhover"></div></a></td></tr></tbody></table></div>
+				</div>
+			</div>
+			<div class="everydayinfo" style="height: 629px; margin-top: 80px;">
+				<div class="Infotop">
+					<div class="worlDay">2016年5月(大)星期四</div>
+					<div class="NumberDay">12</div>
+					<div id="chinaDay" class="lMonthDay">四月初六</div>
+					<div class="tactwo">
+						<span id="chinaDay2" class="tac">丙申年【猴年】</span> <span id="chinaDay3" class="tac">癸巳月甲午日</span>
+					</div>
+					<div id="yjlist" class="yjlist">
+						<div class="ylist">
+							<nobr>
+								<span class="ylistName">宜</span><span id="ylist">纳采 订盟 嫁娶 祭祀 祈福 求嗣 开光 解除 出行 出火 入宅 移徙 栽种 纳畜 牧养 动土 破土 入殓 安葬 </span>
+							</nobr>
+						</div>
+						<div class="jlist">
+							<nobr>
+								<span class="jlistName">忌</span><span id="jlist">作灶 安床 开仓 盖屋 动土 安葬 </span>
+							</nobr>
+						</div>
+					</div>
+	
+					<div class="tac">
+						<span id="av_action">距&nbsp;<span class="av-jrt" id="fname">端午节</span>&nbsp;还有&nbsp;<span class="av-czt" id="vaCount">28</span>&nbsp;天
+						</span>
+					</div>
+				</div>
+				<div class="Infobottom">
+					<iframe scrolling="no" src="https://tianqiapi.com/api.php?style=ts&skin=durian" color="#999" frameborder="0" width="100%" height="100%" allowtransparency="true"></iframe>
+					<div class="top" id="city" style="display: none">
+						<span class="city">深圳</span> <span class="change" style="display:none;">[切换]</span> <span class="airquality">99良好</span> <span class="air">空气质量:&nbsp;</span>
+					</div>
+					<div class="clear" style="display: none"></div>
+					<div class="mid" id="weather" style="background: none; display: none">
+						<div class="m_left">
+							<ul class="one_day" id="day0">
+								<li>12日星期四</li>
+								<li><img id="today_icon" src="./resource/fine.png" alt=""></li>
+								<li id="today_tem">25<span class="juhao">º</span></li>
+								<li>晴</li>
+								<li> 17℃~ 30℃</li>
+								<li><span>南风</span>&nbsp;<span>3-4级</span></li>
+							</ul>
+						</div>
+						<div class="m_mid">
+							<ul class="two_day" id="day1">
+								<li>13日星期五</li>
+								<li><img src="./resource/cloud2.png" alt=""></li>
+								<li></li>
+								<li>多云</li>
+								<li> 16℃~ 23℃</li>
+								<li><span>东北风</span>&nbsp;<span>4-5级</span></li>
+							</ul>
+						</div>
+						<div class="m_right">
+							<ul class="third_day" id="day2">
+								<li>14日星期六</li>
+								<li><img src="./resource/cloud2.png" alt=""></li>
+								<li></li>
+								<li>多云</li>
+								<li> 19℃~ 29℃</li>
+								<li><span>东南风</span>&nbsp;<span>3-4级</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear" style="display: none"></div>
+					<div class="bottom" id="warning" style="display: none">各项气象条件适宜，发生感冒机率较低。</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./resource/common.js" style="position: absolute;"></script>
+	<script type="text/javascript" src="./resource/wnl.js"></script>
+	<script type="text/javascript" src="./resource/lunarjson.js"></script>
+	<script type="text/javascript" src="./resource/zhwnl.js"></script>
+	<script type="text/javascript" src="./resource/makeCal.js"></script>
+	<script type="text/javascript" src="./resource/index.js"></script>
+	<script type="text/javascript" src="./resource/jquery.artDialog.source.js"></script>
+<!--	<script type="text/javascript" src="./resource/city.js"></script>-->
+	<script type="text/javascript">
+		// loadJsonp("深圳");
+	</script>
+</body></html>
